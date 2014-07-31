@@ -40,4 +40,5 @@ gem 'spring',        group: :development
 
 gem 'therubyracer'
 gem 'pg'
+gem 'devise'
 

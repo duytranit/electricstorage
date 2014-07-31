@@ -1,2 +1,17 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+	
+<div id="user_nav">
+  <% if staff_signed_in? %>
+    Logged in as <strong><%= current_staff.email %></strong>.
+    <%= link_to 'Edit profile', edit_staff_registration_path %> |
+    <%= link_to "Logout", destroy_staff_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_staff_registration_path %> |
+    <%= link_to "Login", new_staff_session_path %>
+  <% end %>
+</div>
+
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, id: "flash_#{name}" %>
+<% end %>
