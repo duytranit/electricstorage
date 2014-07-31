@@ -43,3 +43,10 @@ gem 'pg'
 gem 'devise'
 gem 'paperclip'
 
+#active admin
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'formtastic', github: 'justinfrench/formtastic'
+#--------end-------------
+
