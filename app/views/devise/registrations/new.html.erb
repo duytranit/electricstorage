@@ -17,6 +17,11 @@
   	<%= f.text_field :name %>
   </div>
 
+  <div>
+    <%= f.label :avatar, "Avatar" %>
+    <%= f.file_field :avatar %>
+  </div>
+
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 

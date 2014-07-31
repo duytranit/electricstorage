@@ -24,6 +24,12 @@
     <%= f.text_field :name %>
   </div>
 
+  <div>
+    <%= f.label :avatar, "Avatar" %>
+    <%= f.file_field :avatar %> <br />
+    <%= image_tag current_staff.avatar.url(:small) %>
+  </div>
+
   <div><%= f.submit "Update" %></div>
 <% end %>
 
